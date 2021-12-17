@@ -98,16 +98,16 @@ export function Main() {
 
         <S.ContainerWhy>
           <S.BoxWhy>
-            <div>
-              <h1>
+            <S.TitleBoxWhy>
+              <S.TitleWhy>
                 Why Ride
-                <p>With Uloax</p>
-              </h1>
-            </div>
+                <S.ParagraphWhy>With Uloax</S.ParagraphWhy>
+              </S.TitleWhy>
+            </S.TitleBoxWhy>
           </S.BoxWhy>
         </S.ContainerWhy>
 
-        <div>
+        <S.ContainerConteudo>
           <div>
             <div>
               <img src={imgcarteira.url} alt="carteira" />
@@ -151,7 +151,7 @@ export function Main() {
               <button>{btnbook}</button>
             </div>
           </div>
-        </div>
+        </S.ContainerConteudo>
         <div imgtaximaps={imgtaximaps.url}>
           <div>
             <h1>{titledownload}</h1>

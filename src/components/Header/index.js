@@ -69,11 +69,11 @@ export function Header() {
               <S.TitleBook>{titlebook}</S.TitleBook>
               <S.ParagraphNumber>{paragraphnumber}</S.ParagraphNumber>
             </S.BoxBook>
-            <Carousel>
-              <S.BoxImgTaxi>
+            <S.BoxImgTaxi>
+              <Carousel>
                 <S.ImgTaxi src={imgtaxi.url} alt="Image Taxi" />
-              </S.BoxImgTaxi>
-            </Carousel>
+              </Carousel>
+            </S.BoxImgTaxi>
           </S.Box>
 
           <S.BoxDestino>

@@ -1,5 +1,6 @@
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
+import * as S from "./style";
 import "../Global/style.css";
 
 export function Footer() {
@@ -61,88 +62,88 @@ export function Footer() {
 
   return (
     <>
-      <div>
-        <div>
-          <section>
-            <div>
-              <div>
-                <h1>{titleaddress}</h1>
-                <p>{paragraphlorem}</p>
-              </div>
+      <S.ContainerFooterConteudo>
+        <S.ContainerFooter>
+          <S.SecaoFooter>
+            <S.BoxFooter>
+              <S.BoxAddress>
+                <S.TitleAddress>{titleaddress}</S.TitleAddress>
+                <S.ParagraphLorem>{paragraphlorem}</S.ParagraphLorem>
+              </S.BoxAddress>
 
-              <div>
-                <h1>{titlelinks}</h1>
-                <a href="#">
-                  <div>
-                    <img src={imgbolinha.url} alt="Bolinha" />
+              <S.BoxLinks>
+                <S.TitleFollow>{titlelinks}</S.TitleFollow>
+                <S.Link href="#">
+                  <S.BoxHome>
+                    <S.ImgBolinha src={imgbolinha.url} alt="Bolinha" />
                     <p>{btnhome}</p>
-                  </div>
-                  <div>
-                    <img src={imgbolinha.url} alt="Bolinha" />
+                  </S.BoxHome>
+                  <S.BoxRotas>
+                    <S.ImgBolinha src={imgbolinha.url} alt="Bolinha" />
                     <p>{btnabout}</p>
-                  </div>
-                  <div>
-                    <img src={imgbolinha.url} alt="Bolinha" />
+                  </S.BoxRotas>
+                  <S.BoxRotas>
+                    <S.ImgBolinha src={imgbolinha.url} alt="Bolinha" />
                     <p>{btntaxi}</p>
-                  </div>
-                  <div>
-                    <img src={imgbolinha.url} alt="Bolinha" />
+                  </S.BoxRotas>
+                  <S.BoxRotas>
+                    <S.ImgBolinha src={imgbolinha.url} alt="Bolinha" />
                     <p>{btnbooking}</p>
-                  </div>
-                  <div>
-                    <img src={imgbolinha.url} alt="Bolinha" />
+                  </S.BoxRotas>
+                  <S.BoxRotas>
+                    <S.ImgBolinha src={imgbolinha.url} alt="Bolinha" />
                     <p>{btncontatos}</p>
-                  </div>
-                </a>
-              </div>
+                  </S.BoxRotas>
+                </S.Link>
+              </S.BoxLinks>
 
-              <div>
-                <h1>{titlefollow}</h1>
-                <a href="#">
-                  <div>
-                    <img src={iconfacebook.url} alt="Facebook" />
-                    <p>Facebook</p>
-                  </div>
+              <S.BoxFollow>
+                <S.TitleFollow>{titlefollow}</S.TitleFollow>
+                <S.Link href="#">
+                  <S.BoxConteudoFollow>
+                    <S.ImgSociais src={iconfacebook.url} alt="Facebook" />
+                    <S.ParagraphSociais>Facebook</S.ParagraphSociais>
+                  </S.BoxConteudoFollow>
 
-                  <div>
-                    <img src={icontwitter.url} alt="Twitter" />
-                    <p>Twitter</p>
-                  </div>
+                  <S.BoxConteudoFollow>
+                    <S.ImgSociais src={icontwitter.url} alt="Twitter" />
+                    <S.ParagraphSociais>Twitter</S.ParagraphSociais>
+                  </S.BoxConteudoFollow>
 
-                  <div>
-                    <img src={iconlinkedin.url} alt="Linkedin" />
-                    <p>Linkedin</p>
-                  </div>
+                  <S.BoxConteudoFollow>
+                    <S.ImgSociais src={iconlinkedin.url} alt="Linkedin" />
+                    <S.ParagraphSociais>Linkedin</S.ParagraphSociais>
+                  </S.BoxConteudoFollow>
 
-                  <div>
-                    <img src={iconyoutube.url} alt="Youtube" />
-                    <p>Youtube</p>
-                  </div>
+                  <S.BoxConteudoFollow>
+                    <S.ImgSociais src={iconyoutube.url} alt="Youtube" />
+                    <S.ParagraphSociais>Youtube</S.ParagraphSociais>
+                  </S.BoxConteudoFollow>
 
-                  <div>
-                    <img src={iconinstagram.url} alt="Instagram" />
-                    <p>Instagram</p>
-                  </div>
-                </a>
-              </div>
+                  <S.BoxConteudoFollow>
+                    <S.ImgSociais src={iconinstagram.url} alt="Instagram" />
+                    <S.ParagraphSociais>Instagram</S.ParagraphSociais>
+                  </S.BoxConteudoFollow>
+                </S.Link>
+              </S.BoxFollow>
 
-              <div>
-                <h1>Newusletter</h1>
-                <input placeholder="Enter Your Email"></input>
-                <button>{btnsubscribe}</button>
-              </div>
-            </div>
-          </section>
-        </div>
-        <div>
+              <S.BoxNew>
+                <S.TitleFollow>Newusletter</S.TitleFollow>
+                <S.Input placeholder="Enter Your Email"></S.Input>
+                <S.BtnSubscribe>{btnsubscribe}</S.BtnSubscribe>
+              </S.BoxNew>
+            </S.BoxFooter>
+          </S.SecaoFooter>
+        </S.ContainerFooter>
+        <S.BoxCopyright>
           <div>
-            <p>
+            <S.ParagraphCopyright>
               2019 All Rights Reserved.
               <p>Free html Templates</p>
-            </p>
+            </S.ParagraphCopyright>
           </div>
-        </div>
-      </div>
+        </S.BoxCopyright>
+      </S.ContainerFooterConteudo>
     </>
   );
 }
